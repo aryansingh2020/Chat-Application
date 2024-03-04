@@ -1,0 +1,78 @@
+body {
+    display: grid;
+    place-items: center;
+    height: 100vh; /* Ensure the body takes the full height of the viewport */
+    margin: 0; /* Remove default margin */
+    background-color: blueviolet;
+}
+#heading{
+    position:relative;
+    color:white;
+    font-size:35px;
+}
+
+#nameBar{
+    position:relative;
+    display:flex;
+    margin-left:auto;
+    margin-right:auto;
+    width:400px;
+}
+#inpName{
+    width:300px;
+    height:50px;
+    border-top-left-radius: 15px;
+    border-bottom-left-radius: 15px;
+    /* border-radius: 10px; */
+}
+#submit{
+    margin-left:0;
+    height:55px;
+    width:100px;
+    border-top-right-radius: 15px;
+    border-bottom-right-radius: 15px;
+    background-color: blue;
+    color:yellow;
+}
+
+#controls{
+    position: relative;
+    display:flex;
+    margin-left:auto;
+    margin-right:auto;
+    margin-bottom:60px;
+    width:400px;
+}
+
+#inp{
+    width:300px;
+    height:50px;
+    border-top-left-radius: 15px;
+    border-bottom-left-radius: 15px;
+}
+
+#btn{
+    margin-left:0;
+    height:55px;
+    width:100px;
+    border-top-right-radius: 15px;
+    border-bottom-right-radius: 15px;
+    background-color: blue;
+    color:yellow;
+}
+
+#screen{
+    position: relative;
+    background-color: yellow;
+    border-style: solid;
+    border-width: 5px;
+    border-color: black;
+    border-radius: 10px;;
+    width:450px;
+    height:300px;
+    margin-left:auto;
+    margin-right:auto;
+    overflow:auto;
+}
+
+
