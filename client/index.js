@@ -5,7 +5,7 @@ var inp=document.getElementById('inp');
 var name=document.getElementById("inpName");
 const subBtn=document.getElementById("submit");
 var clientName="";
-const ws=new WebSocket("ws://localhost:3002");
+const ws = new WebSocket("wss://chat-application-m4xb.onrender.com");
 
 inp.disabled=true;
 btn.disabled=true;
