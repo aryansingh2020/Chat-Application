@@ -14,6 +14,7 @@ subBtn.addEventListener('click',()=>{
     clientName=name.value;
     name.disabled=true;
     subBtn.disabled=true;
+    ws.send(clientName+" joined the chat.")
     if(clientName!=="")
     {
         inp.disabled=false;
@@ -34,6 +35,7 @@ ws.addEventListener("open",(ws)=>{
 btn.addEventListener('click',()=>{
     msg.innerHTML=msg.innerHTML+"You : "+inp.value+"<br>";
     ws.send(clientName+" : "+inp.value);
+    inp.value="";
 })
 
 ws.addEventListener("message",(event)=>{
