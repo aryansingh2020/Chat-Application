@@ -4,6 +4,7 @@ body {
     height: 100vh; /* Ensure the body takes the full height of the viewport */
     margin: 0; /* Remove default margin */
     background-color: blueviolet;
+    
 }
 #heading{
     position:relative;
@@ -11,6 +12,10 @@ body {
     font-size:50px;
     font-family: 'Brush Script MT', cursive;
 }
+#msg{
+    padding-left:10px;
+}
+
 /*Name fields*/
 #nameBar{
     position:relative;
@@ -22,63 +27,62 @@ body {
 #inpName{
     width:300px;
     height:50px;
+    border-style:hidden;
     border-top-left-radius: 15px;
     border-bottom-left-radius: 15px;
-    /* border-radius: 10px; */
+    padding-left:10px;
+}
+#inpName:not([disabled]):hover{
+    box-shadow: 0 0 10px 2px rgba(255, 114, 248, 0.8);
 }
 #submit{
     margin-left:0;
-    height:55px;
+    height:52px;
     width:100px;
+    border-style:hidden;
     border-top-right-radius: 15px;
     border-bottom-right-radius: 15px;
     background-color: blue;
-    color:yellow;
+    color:rgb(255, 255, 255);
 }
-#submit:hover{
-    margin-left:0;
-    height:55px;
-    width:100px;
-    border-top-right-radius: 15px;
-    border-bottom-right-radius: 15px;
+#submit:not([disabled]):hover{
     background-color: rgb(9, 9, 173);
-    color:yellow;
+    box-shadow: 0 0 10px 2px rgba(255, 114, 248, 0.8);
 }
 
 /*Message fields*/
 #messageBar{
-    position: relative;
+    position:relative;
     display:flex;
     margin-left:auto;
     margin-right:auto;
-    margin-bottom:60px;
     width:400px;
+    margin-bottom:auto;
 }
-
 #inpMessage{
     width:300px;
     height:50px;
+    border-style:hidden;
     border-top-left-radius: 15px;
     border-bottom-left-radius: 15px;
+    padding-left:10px;
 }
-
+#inpMessage:not([disabled]):hover{
+    box-shadow: 0 0 10px 2px rgba(255, 114, 248, 0.8);
+}
 #send{
     margin-left:0;
-    height:55px;
+    height:52px;
     width:100px;
+    border-style:hidden;
     border-top-right-radius: 15px;
     border-bottom-right-radius: 15px;
     background-color: blue;
-    color:yellow;
+    color:rgb(255, 255, 255);
 }
-#send:hover{
-    margin-left:0;
-    height:55px;
-    width:100px;
-    border-top-right-radius: 15px;
-    border-bottom-right-radius: 15px;
+#send:not([disabled]):hover{
     background-color: rgb(9, 9, 173);
-    color:yellow;
+    box-shadow: 0 0 10px 2px rgba(255, 114, 248, 0.8);
 }
 
 #screen{
@@ -86,13 +90,15 @@ body {
     background-color: yellow;
     border-style: solid;
     border-width: 5px;
-    border-color: black;
-    border-radius: 10px;;
+    border-style:hidden;
+    border-radius: 10px;
+    box-shadow: 0 0 10px 2px rgba(255, 114, 248, 0.8);
     width:600px;
     height:400px;
     margin-left:auto;
     margin-right:auto;
     overflow:auto;
 }
+
 
 

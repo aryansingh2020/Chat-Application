@@ -1,7 +1,7 @@
 document.addEventListener('DOMContentLoaded', function () {
 const sendBtn=document.getElementById('send');
 var msg=document.getElementById('msg');
-var inputMessage=document.getElementById('inputMessage');
+var inputMessage=document.getElementById('inpMessage');
 var name=document.getElementById("inpName");
 const subBtn=document.getElementById("submit");
 var clientName="";
@@ -10,15 +10,19 @@ const ws = new WebSocket("wss://chat-application-m4xb.onrender.com");
 inputMessage.disabled=true;
 sendBtn.disabled=true;
 
+ws.addEventListener("open",(ws)=>{
+    console.log("Connected to the server.")
+ })
+
 subBtn.addEventListener('click',()=>{
     clientName=name.value;
     name.disabled=true;
     subBtn.disabled=true;
-    ws.send("### "+clientName+" joined the chat. ###")
     if(clientName!=="")
     {
         inputMessage.disabled=false;
         sendBtn.disabled=false;
+        ws.send("-------> "+clientName+" joined the chat <-------");
     }
     else if(clientName==="")
     {
@@ -27,10 +31,6 @@ subBtn.addEventListener('click',()=>{
         subBtn.disabled=false;
     }
 })
-
-ws.addEventListener("open",(ws)=>{
-    console.log("Connected to the server.")
- })
 
 sendBtn.addEventListener('click',()=>{
     msg.innerHTML=msg.innerHTML+"You : "+inputMessage.value+"<br>";
