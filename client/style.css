@@ -8,9 +8,10 @@ body {
 #heading{
     position:relative;
     color:white;
-    font-size:35px;
+    font-size:50px;
+    font-family: 'Brush Script MT', cursive;
 }
-
+/*Name fields*/
 #nameBar{
     position:relative;
     display:flex;
@@ -34,8 +35,18 @@ body {
     background-color: blue;
     color:yellow;
 }
+#submit:hover{
+    margin-left:0;
+    height:55px;
+    width:100px;
+    border-top-right-radius: 15px;
+    border-bottom-right-radius: 15px;
+    background-color: rgb(9, 9, 173);
+    color:yellow;
+}
 
-#controls{
+/*Message fields*/
+#messageBar{
     position: relative;
     display:flex;
     margin-left:auto;
@@ -44,20 +55,29 @@ body {
     width:400px;
 }
 
-#inp{
+#inpMessage{
     width:300px;
     height:50px;
     border-top-left-radius: 15px;
     border-bottom-left-radius: 15px;
 }
 
-#btn{
+#send{
     margin-left:0;
     height:55px;
     width:100px;
     border-top-right-radius: 15px;
     border-bottom-right-radius: 15px;
     background-color: blue;
+    color:yellow;
+}
+#send:hover{
+    margin-left:0;
+    height:55px;
+    width:100px;
+    border-top-right-radius: 15px;
+    border-bottom-right-radius: 15px;
+    background-color: rgb(9, 9, 173);
     color:yellow;
 }
 
@@ -68,8 +88,8 @@ body {
     border-width: 5px;
     border-color: black;
     border-radius: 10px;;
-    width:450px;
-    height:300px;
+    width:600px;
+    height:400px;
     margin-left:auto;
     margin-right:auto;
     overflow:auto;
